@@ -1,0 +1,176 @@
+
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: #f0f3fa;
+      scroll-behavior: smooth;
+    }
+
+    /* Logo Badge */
+    .logo-badge {
+      width: 50px;
+      height: 50px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      animation: pop 0.8s ease;
+    }
+    .logo-badge i {
+      font-size: 24px;
+      color: #1f2b6c;
+    }
+    @keyframes pop {
+      from { transform: scale(0); }
+      to { transform: scale(1); }
+    }
+
+    /* NavBar */
+    nav {
+      background: #1f2b6c;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav .title {
+      color: white;
+      font-size: 24px;
+      font-weight: 600;
+      margin-right: auto;
+      display: flex;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+      position: relative;
+    }
+    nav a:hover {
+      color: #ffdd57;
+      transform: translateY(-2px);
+    }
+
+    /* Home Section */
+    #home {
+      text-align: center;
+      padding: 70px 20px;
+      background: linear-gradient(to right, #233a77, #4b61e6);
+      color: white;
+      animation: fadeIn 1.5s ease;
+    }
+    #home h1 {
+      font-size: 50px;
+      animation: slideDown 1s ease;
+    }
+    #home p {
+      font-size: 20px;
+      opacity: 0.9;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Notes Section */
+    #notes {
+      padding: 40px;
+      text-align: center;
+    }
+    #notes h2 {
+      font-size: 32px;
+      color: #1f2b6c;
+      margin-bottom: 20px;
+    }
+
+    .note-card {
+      width: 280px;
+      margin: 15px;
+      padding: 15px;
+      display: inline-block;
+      border-radius: 12px;
+      background: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: 0.3s;
+      animation: fadeIn 1s ease;
+    }
+    .note-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    }
+    .note-card i {
+      font-size: 22px;
+      color: #4b61e6;
+      margin-right: 10px;
+    }
+
+    /* Login Section */
+    #login {
+      padding: 40px;
+      background: #eef1f7;
+      text-align: center;
+    }
+    #login h2 {
+      font-size: 32px;
+      color: #1f2b6c;
+    }
+
+    article {
+      background: white;
+      width: 340px;
+      padding: 25px;
+      margin: 25px auto;
+      border-radius: 12px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+      animation: pop 0.8s ease;
+    }
+
+    article h3 {
+      color: #233a77;
+    }
+    input, button {
+      width: 95%;
+      padding: 10px;
+      border-radius: 6px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    button {
+      background: #233a77;
+      color: white;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #4b61e6;
+      transition: 0.2s ease-in-out;
+    }
+
+    /* Contact */
+    #contact {
+      text-align: center;
+      padding: 40px;
+      background: white;
+    }
+
+    footer {
+      background: #1f2b6c;
+      padding: 15px;
+      text-align: center;
+      color: white;
+    }
